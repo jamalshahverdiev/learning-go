@@ -1,0 +1,7 @@
+---
+credentials:
+  username: Jamal
+  password: gizli
+webserver:
+  name: Google Search Page
+  endpoint: https://www.google.com

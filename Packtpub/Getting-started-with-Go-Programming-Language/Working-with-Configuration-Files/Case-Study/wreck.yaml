@@ -1,0 +1,4 @@
+---
+headers:
+  common:
+    user-agent: wreck/1.1

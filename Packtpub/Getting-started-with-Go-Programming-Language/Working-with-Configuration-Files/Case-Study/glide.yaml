@@ -1,0 +1,5 @@
+package: github.com/jamalshahverdiev/GoLang-Packtpub/Working-with-Configuration-Files/Case-Study
+import:
+- package: github.com/jamalshahverdiev/wreck
+- package: github.com/spf13/cobra
+- package: github.com/spf13/viper
