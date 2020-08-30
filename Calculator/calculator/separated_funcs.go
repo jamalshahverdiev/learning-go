@@ -23,10 +23,10 @@ func positiveIntegerValue(piv int) {
         if piv < 0 {
                 fmt.Printf(" %d is a negative integer.", piv)
                 os.Exit(1)
-        } else if piv > 0 {
-                fmt.Printf("%d  is a positive integer.", piv)
-        } else {
-                fmt.Printf("%d is Zero.", piv)
+        } else if piv == 0 {
+                fmt.Printf("%d is a positive zero integer value.", piv)
                 os.Exit(1)
         }
+    
+        fmt.Printf("%d  is a positive and on-zere integer value.", piv)
 }
