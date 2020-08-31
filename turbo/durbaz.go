@@ -24,6 +24,12 @@ func main() {
 	fmt.Println(cardetails)
 	changeCarsState(cardetails)
 	fmt.Println(cardetails)
+	cars := getCars()
+	changeCarsState(&cars[0])
+	fmt.Println(cars[0])
+	changeCarsState(&cars[1])
+	fmt.Println(cars[1])
+	fmt.Println(cars)
 }
 
 func carSoldOrNod() *Car {
@@ -32,7 +38,11 @@ func carSoldOrNod() *Car {
 }
 
 func getCars() []Car {
-   
+	myStructs := []Car{
+		{brand: "Volvo", model: "6", bantype: "Sedan", color: "White", mileage: 7000, price: 15000, state: State(Available)},
+		{brand: "Mercedes", model: "C200", bantype: "Sedan", color: "Metallic", mileage: 7000, price: 10000, state: State(Available)},
+	}
+	return myStructs
 }
 
 func changeCarsState(v *Car) {
